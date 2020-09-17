@@ -1,0 +1,286 @@
+/* Main */
+:root {
+	--primary-color: #4949E7;
+	--secondary-color: #3838D6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Root */
+#root {
+	display: block;
+	margin-top: 80px;
+}
+
+.inline-block { display: inline-block; }
+
+/* Text Align */
+.ta-l { text-align: left; }
+.ta-c { text-align: center; }
+.ta-r { text-align: right; }
+
+/* Utils */
+.center {
+	text-align: center;
+}
+
+.module {
+	padding: 30px;
+}
+
+/* Main page */
+.welcome {
+	padding-top: 150px;
+	padding-bottom: 15%;
+}
+
+.welcome > .title {
+	font-size: 45px;
+}
+
+.welcome > .subtitle {
+	color: #333;
+	font-size: 21px;
+}
+
+.features-list {
+	margin: auto;
+}
+
+.feature-item {
+	display: inline-table;
+	padding: 20px;
+}
+
+.feature-icon {
+	width: 50px;
+	height: 50px;
+}
+
+.feature-information {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.feature-icon, .feature-information {
+	display: inline-block;
+	padding: 7px;
+}
+
+.feature-title, .feature-description {
+	display: block;
+	text-align: left;
+}
+
+.feature-title {
+	font-weight: bold;
+}
+
+/* Footer */
+.footer {
+	width: 100%;
+	height: 100px;
+}
+
+.footer > p {
+	margin: auto;
+	width: 80%;
+	font-size: 17px;
+	padding-top: 80px;
+	text-align: center;
+}
+
+/* Information */
+.information-title {
+	font-size: 36px;
+}
+
+.information-body {
+	font-size: 20px;
+}
+
+.information-image {
+	width: auto;
+}
+
+.information-text {
+	margin: auto;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.information-right {
+	padding-right: 8%;
+}
+
+.information-left {
+	padding-left: 8%;
+}
+
+.information {
+	display: inline-table;
+	width: 80%;
+	margin: auto;
+}
+
+/* Colors */
+.text-primary {
+	color: var(--primary-color);
+}
+
+/* Particles */
+#particles-js {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+    z-index: -100;
+}
+
+/* Responsive */
+@media only screen and (max-device-width:768px), (max-width: 768px) {
+	.welcome {
+		padding-top: 50px;
+		padding-bottom: 80px;
+	}
+
+	.welcome-logo {
+		display: none;
+	}
+
+	.feature-title, .feature-description {
+		text-align: center;
+	}
+
+	.information {
+		display: block;
+		padding-left: 0px;
+		width: 100%;
+	}
+
+	.information-text {
+		display: inline-block;
+	}
+
+	.information-title {
+		font-size: 27px;
+		text-align: center;
+	}
+
+	.information-body {
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.information-image {
+		width: 120px;
+	}
+
+	.information-right, .information-left {
+		padding: 0px;
+	}
+
+	.footer > p {
+		width: 95%;
+	}
+}
+
+.course-search-input {
+	height: 45px;
+	border-radius: 30px;
+	border: 1px solid rgba(0,0,0,0.2);
+	/* box-shadow: 0px 3px 5px rgba(0,0,0,0.4); */
+	width: 30%;
+	padding: 10px;
+}
+
+.course-list {
+	margin-top: 50px;
+}
+
+.course-item {
+	width: 270px;
+	height: 450px;
+	transition: transform .15s;
+}
+
+.course-item:hover {
+	transform: scale(1.1);
+}
+
+/*
+.course-item:hover {
+	z-index: 10;
+	-webkit-animation: course-hover 0.05s;
+    animation: course-hover 0.05s;
+	animation-fill-mode: forwards;
+	width: 310px;
+	height: 485px;
+}*/
+
+@keyframes course-hover {
+	10% { width: 275px; height:450px;}
+	20% { width: 280px; height:455px;}
+    30% { width: 285px; height:460px;}
+	40% { width: 290px; height:465px;}
+	50% { width: 295px; height:470px;}
+	60% { width: 300px; height:475px;}
+	70% { width: 305px; height:480px;}
+	100% { width: 310px; height:485px;}
+}
+
+.course-item {
+	display: inline-block;
+	margin: 0 20px;
+	border-radius: 15px;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+}
+    
+.course-search-input:focus {
+	outline: none;
+	padding: 10px;
+}
+
+.course-info {
+	padding: 10px;
+	text-align: left;
+}
+
+.course-name {
+	font-size: 18px;
+	font-weight: bold;
+	display: block;
+}
+
+.course-item > img {
+	width: 100%;
+	border-radius: 15px 15px 0 0;
+	display: block;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white; 
+  border-radius: 50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color); 
+}

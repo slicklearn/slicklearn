@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://cdn.slicklearn.xyz/logo/256.png">
+
+    <!-- CSS: Libraries -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <!-- JS: Libraries -->
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+    
+    <!-- JS: Web Scripts -->
+    <script src="@slick.utils.js"></script>
+    <script src="@slick.app.js"></script>
+    <script src="@slick.events.js"></script>
+    <script src="@slick.gui.js"></script>
+
+    <!-- CSS: Web Styles -->
+    <link rel="stylesheet" href="@slick.app.css">
+    <link rel="stylesheet" href="@slick.navbar.css">
+
+    <!-- Web -->
+    <title><%- title -%></title>
+</head>
+<body>
+    <%- include("../components/navbar.ejs") -%>
+    <app id="root">

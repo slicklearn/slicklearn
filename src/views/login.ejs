@@ -1,0 +1,25 @@
+<%- include("../layout/_head.ejs") -%>
+
+<div class="center welcome module">
+    <img src="https://cdn.slicklearn.xyz/logo/256.png" width="128px" class="login-logo">
+
+    <div style="margin: auto; width: 300px;">
+        <div class="form-group">
+              <label class="form-label" for="email-input" style="text-align: left;">Correo electrónico</label>
+              <input class="form-input" type="email" id="email-input" placeholder="very.cool@student.com">
+        </div>
+
+        <div class="form-group">
+              <label class="form-label" for="password-input" style="text-align: left;">Contraseña</label>
+              <input class="form-input" type="password" id="password-input" placeholder="********">
+        </div>
+    </div>
+
+    <div id="login-buttons">
+        <button class="btn btn-lg mt-20 g-recaptcha" data-sitekey="6Ld2wrAZAAAAAHmmIdos8UT9o37UxzYD6OwaMF83" data-callback='onSubmitLogin'>Login</button>
+        <br/><br/>
+        <a href="/register" router=true>Aún no estoy registrado</a>
+    </div>
+</div>
+
+<%- include("../layout/_foot.ejs") -%>

@@ -1,0 +1,35 @@
+<%- include("../layout/_head.ejs") -%>
+
+<div class="center welcome module">
+    <img src="https://cdn.slicklearn.xyz/logo/256.png" width="128px" class="login-logo">
+
+    <div style="margin: auto; width: 300px;">
+        <div class="form-group">
+                <label class="form-label" for="username-input" style="text-align: left;">Nombre de usuario</label>
+                <input class="form-input" type="text" id="username-input" placeholder="verycoolstudent">
+        </div>
+
+        <div class="form-group">
+                <label class="form-label" for="email-input" style="text-align: left;">Email</label>
+                <input class="form-input" type="email" id="email-input" placeholder="john@mail.com">
+        </div>
+
+        <div class="form-group">
+                <label class="form-label" for="password-input" style="text-align: left;">Password</label>
+                <input class="form-input" type="password" id="password-input" placeholder="********">
+        </div>
+
+        <div class="form-group">
+                <label class="form-label" for="confirm-password-input" style="text-align: left;">Confirmar Contraseña</label>
+                <input class="form-input" type="password" id="confirm-password-input" placeholder="********">
+        </div>
+    </div>
+
+    <div id="register-buttons">
+        <button class="btn btn-lg mt-20 g-recaptcha" data-sitekey="6Ld2wrAZAAAAAHmmIdos8UT9o37UxzYD6OwaMF83" data-callback='onSubmitRegister'>Register</button>
+        <br/><br/>
+        <a href="/login" router=true>Ya tengo cuenta</a>
+    </div>
+</div>
+
+<%- include("../layout/_foot.ejs") -%>
