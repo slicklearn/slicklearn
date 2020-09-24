@@ -1,0 +1,37 @@
+<!-- SEO: Site specify -->
+<meta name="description" content="<%- description -%>">
+
+<!-- SEO: Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178790269-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-178790269-1');
+</script>
+
+
+<!-- SEO: Global -->
+<meta name="keywords" content="slick learn, learn, slick, slicklearn, aprende, estudiante, plataforma, limites, aprendizaje, aprender, programacion, online, aprender programacion, gratis,
+open source, codigo libre, informatica, educacion, accesible, compatible, disponible, facil, javascript, html,
+css, java, python, c++, c#, español, programacion en español, aprender java, aprender c#, kotlin, aprender programacion, aprender programacion desde cero, desde cero, aprender programacion java, como aprender programacion, aprender programacion web, informatica, aprender programacion informatica, programas para aprender, desde casa, programacion en c, online, gratis, aprender gratis, quiero aprender programacion, empezar a programar, programadores, programacion en python, programacion desde cero, aprender programacion para niños, programacion en android, programacion orientada a objetos, programacion neurolinguistica, programacion basica, c, c++, c#, kotlin, matlab, pascal, mysql, nosql, mongodb, web, html, css, libro de programacion, programar aplicaciones, programar programas, programar paginas webs, crear apps, crear aplicaciones android, facil y rapido, universidad, ">
+<meta name="author" content="Sammwy">
+
+<!-- SEO: OpenGraph -->
+<meta property="og:locale" content="es_ES">
+<meta property="og:type" content="article">
+<meta property="og:description" content="<%- description -%>">
+<meta property="og:url" content="https://slicklearn.xyz">
+<meta property="og:image" content="<% if(locals.profile == null) {%> <%-'https://cdn.slicklearn.xyz/logo/512.png'-%><%} else { %> <%-'https://cdn.slicklearn.xyz/avatar/' + locals.profile.avatar + '.png'-%> <%}%>">
+<meta property="og:title" content="<%- title -%>">
+
+<!-- SEO: Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="https://slicklearn.xyz">
+<meta name="twitter:title" content="<%- title -%>">
+<meta name="twitter:description" content="<%- description -%>">
+<meta name="twitter:site" content="@slicklearn">
+<meta name="twitter:creator" content="@sammwy">
+<meta name="twitter:image" content="<% if(locals.profile == null) {%> <%-'https://cdn.slicklearn.xyz/logo/512.png'-%><%} else { %> <%-'https://cdn.slicklearn.xyz/avatar/' + locals.profile.avatar + '.png'-%> <%}%>">

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     
     <!-- Metadata -->
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="https://cdn.slicklearn.xyz/logo/256.png">
 
@@ -13,19 +13,31 @@
 	<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
     <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.slicklearn.xyz/css/notifier.min.css">
 
     <!-- JS: Libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src='https://www.google.com/recaptcha/api.js' async defer></script>
-    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.slicklearn.xyz/js/notifier.min.js"></script>
+
     <!-- JS: Web Scripts -->
     <script src="@slick.utils.js"></script>
     <script src="@slick.app.js"></script>
     <script src="@slick.events.js"></script>
     <script src="@slick.gui.js"></script>
+    <script src="@slick.accounts.js"></script>
+    <script src="@slick.ajax.js"></script>
 
     <!-- CSS: Web Styles -->
     <link rel="stylesheet" href="@slick.app.css">
     <link rel="stylesheet" href="@slick.navbar.css">
+    <link rel="stylesheet" href="@slick.utils.css">
+    <link rel="stylesheet" href="@slick.profiles.css">
+
+    <!-- SEO -->
+    <%- include("../layout/_seo.ejs") -%>
 
     <!-- Web -->
     <title><%- title -%></title>
